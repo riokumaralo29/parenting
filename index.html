@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moodfaith - Iman di Era Filter</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles and animations */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; /* White */
+            scroll-behavior: smooth;
+        }
+
+        /* Animation for sections fading in on scroll */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .scroll-animate.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Gradient text for emphasis */
+        .gradient-text {
+            background: linear-gradient(to right, #fbbf24, #f97316); /* amber-400 to orange-500 */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/HeroImage.jpeg'); /* stone-700 */
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="text-stone-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-stone-800">Mood<span class="text-amber-500">faith</span></h1>
+            <a href="https://moodfaith.myr.id/pl/christianity-parenting" class="bg-amber-500 text-white font-bold py-2 px-5 rounded-lg hover:bg-amber-600 transition-colors duration-300 hidden sm:block">Dapatkan E-book</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg text-white min-h-screen flex items-center justify-center text-center pt-16">
+            <div class="container mx-auto px-6 scroll-animate">
+                <h2 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Anak Anda di Medan Perang Digital.</h2>
+                <h3 class="text-3xl md:text-5xl font-bold mb-6 gradient-text bg-gradient-to-r from-yellow-300 to-amber-400">Apakah Iman Mereka Tahan Uji?</h3>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-slate-200">Dunia menyerang hati anak Anda setiap hari. Saatnya orang tua menjadi komandan iman yang tangguh di rumah.</p>
+                <a href="https://moodfaith.myr.id/pl/christianity-parenting" class="bg-yellow-400 text-stone-900 font-extrabold py-4 px-10 rounded-lg text-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg">Miliki Panduan Anda Sekarang!</a>
+            </div>
+        </section>
+
+        <!-- Pain Points Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center scroll-animate">
+                <h2 class="text-3xl font-bold mb-4 text-stone-800">Apakah Anda Merasakan Ini?</h2>
+                <div class="w-20 h-1 bg-amber-500 mx-auto mb-10"></div>
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto text-left">
+                    <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                        <p class="text-5xl mb-3">😥</p>
+                        <p class="text-lg">Anda lihat anak lebih percaya pada apa yang dikatakan <span class="font-bold">TikTok atau Google</span> daripada nasihat Anda.</p>
+                    </div>
+                    <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                        <p class="text-5xl mb-3">🤔</p>
+                        <p class="text-lg">Merasa metode parenting lama <span class="font-bold">tidak lagi 'nyambung'</span> dengan generasi digital.</p>
+                    </div>
+                    <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                        <p class="text-5xl mb-3">💬</p>
+                        <p class="text-lg">Bingung cara bicara soal Tuhan dan iman <span class="font-bold">tanpa terkesan kaku</span> atau membosankan.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Agitation Section -->
+        <section class="py-20 bg-stone-800 text-white">
+            <div class="container mx-auto px-6 text-center scroll-animate">
+                <h2 class="text-3xl font-bold mb-4">🔥 Jangan Biarkan Masalah Ini Terus Membayangi!</h2>
+                <p class="max-w-3xl mx-auto mb-10 text-slate-300">Setiap hari, nilai-nilai dunia masuk tanpa filter ke dalam pikiran anak Anda. Anda takut terlambat, takut kehilangan koneksi, dan takut iman mereka hanya menjadi tempelan.</p>
+                <div class="bg-yellow-500/10 border border-yellow-500/30 p-6 rounded-lg max-w-2xl mx-auto">
+                    <p class="text-lg font-semibold text-yellow-300">Kenyataannya, narasi sekuler yang terus-menerus terpapar berisiko mengikis kebenaran yang telah Anda tanamkan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center scroll-animate">
+                <h2 class="text-4xl font-bold mb-2 text-stone-800">Inilah Solusi yang Anda Cari:</h2>
+                <p class="text-4xl font-extrabold gradient-text mb-4">E-book "Iman di Era Filter"</p>
+                <p class="max-w-3xl mx-auto text-lg mb-12">Anda butuh PETA pertempuran yang jelas. Bukan sekadar teori, tapi sebuah <span class="font-bold bg-yellow-300 px-2 py-1 rounded">SISTEM</span> yang teruji untuk membangun benteng iman yang kokoh di rumah.</p>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="py-20 bg-amber-50">
+            <div class="container mx-auto px-6 scroll-animate">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-stone-800">🚀 Apa yang Akan Anda Dapatkan?</h2>
+                    <p class="text-lg mt-2">SOP Parenting 4D: Sistem LENGKAP membimbing iman anak di era digital.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"><div class="text-3xl font-bold text-yellow-500 mb-3">1D</div><h3 class="text-xl font-bold mb-2">DISCIPLINE</h3><p>SOP "Koneksi Sebelum Koreksi". Ubah momen disiplin menjadi pengajaran anugerah.</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"><div class="text-3xl font-bold text-amber-500 mb-3">2D</div><h3 class="text-xl font-bold mb-2">DISCIPLESHIP</h3><p>Template "Mezbah Keluarga 15 Menit". Jadikan waktu rohani dinanti.</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"><div class="text-3xl font-bold text-orange-500 mb-3">3D</div><h3 class="text-xl font-bold mb-2">DISCERNMENT</h3><p>"Kerangka 5 Pertanyaan Kritis". Latih anak jadi konsumen media cerdas.</p></div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300"><div class="text-3xl font-bold text-red-500 mb-3">4D</div><h3 class="text-xl font-bold mb-2">DEPLOYMENT</h3><p>Planner "Proyek Misi Keluarga". Geser fokus dari diri ke dampak sesama.</p></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mockup Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 scroll-animate">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="relative h-96 flex items-center justify-center p-8 md:h-auto">
+                        <div class="absolute w-52 transform -rotate-12 hover:rotate-0 transition-transform duration-500"><img src="../parenting/img/dreamina-2025-07-13-7638-cinematic photo, super realistic, a joyf...webp" alt="Mockup Buku Mewarnai Kristen" class="rounded-lg shadow-2xl w-full"></div>
+                        <div class="absolute w-56 transform rotate-3 hover:rotate-0 hover:scale-105 transition-transform duration-500 z-10"><img src="../parenting/img/Iman di Era Filter.webp" alt="Mockup Buku Utama Iman di Era Filter" class="rounded-lg shadow-2xl w-full"></div>
+                        <div class="absolute w-52 transform rotate-12 hover:rotate-0 transition-transform duration-500"><img src="../parenting/img/Iman di Era Filter.webp" alt="Mockup Buku Cerita Alkitab Interaktif" class="rounded-lg shadow-2xl w-full"></div>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h2 class="text-3xl font-bold text-stone-800 mb-4">Bukan Sekadar E-book Biasa</h2>
+                        <p class="text-lg mb-6 text-stone-600">Ini adalah gudang senjata visual Anda. Kami telah mendesain setiap halaman agar mudah dipahami, menarik secara visual, dan langsung bisa dipraktikkan.</p>
+                        <ul class="space-y-4 text-left inline-block">
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>Desain Menarik & Mudah Dicerna</span></li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>Studi Kasus & Contoh Praktis</span></li>
+                            <li class="flex items-center"><svg class="w-6 h-6 mr-3 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg><span>Template & Checklist Siap Pakai</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Audience Section -->
+        <section class="py-20 bg-amber-50">
+            <div class="container mx-auto px-6 scroll-animate">
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 text-center">🎯 Untuk Siapa E-book Ini?</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">✔️</span><span>Orangtua Kristen Millennial (28-42) dengan anak usia 8-18 tahun.</span></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">✔️</span><span>Anda yang cemas iman anak goyah di tengah gempuran era digital.</span></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">✔️</span><span>Anda yang bosan dengan teori dan butuh panduan yang <span class="font-bold">PRAKTIS</span>.</span></li>
+                            <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">✔️</span><span>Anda yang ingin membangun koneksi spiritual yang dalam dengan anak.</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-50 p-8 rounded-lg border border-red-200">
+                        <h2 class="text-3xl font-bold mb-6 text-center text-red-800">⛔ Ini Bukan Untuk Anda Jika...</h2>
+                        <ul class="space-y-4 text-red-900">
+                            <li class="flex items-start"><span class="font-bold mr-3 mt-1">❌</span><span>Anda mencari solusi instan tanpa komitmen untuk menerapkannya.</span></li>
+                            <li class="flex items-start"><span class="font-bold mr-3 mt-1">❌</span><span>Anda tidak terlalu peduli dengan pertumbuhan iman anak Anda.</span></li>
+                            <li class="flex items-start"><span class="font-bold mr-3 mt-1">❌</span><span>Anda merasa sudah 'cukup baik' dan tidak butuh perbaikan.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="harga" class="py-20 bg-stone-100">
+            <div class="container mx-auto px-6 text-center scroll-animate">
+                <h2 class="text-3xl font-bold text-stone-800 mb-4">Penawaran Spesial Terbatas!</h2>
+                <p class="text-lg max-w-2xl mx-auto mb-8">Berapa harga masa depan iman anak Anda? Jauh lebih berharga dari jutaan rupiah. Tapi hari ini, Anda tidak perlu membayar sebanyak itu.</p>
+                
+                <div class="bg-white max-w-lg mx-auto p-8 rounded-xl shadow-2xl border-4 border-yellow-400">
+                    <p class="text-stone-500">Harga Normal: <span class="line-through">Rp 500.000</span></p>
+                    <p class="text-lg font-semibold mt-4 mb-2">Investasi Anda Hari Ini:</p>
+                    <p class="text-7xl font-extrabold text-stone-800 mb-4">CUMA Rp 97.000!</p>
+                    <p class="text-sm text-stone-600 mb-6">Investasi sekali untuk dampak selamanya.</p>
+                    
+                    <a href="https://moodfaith.myr.id/pl/christianity-parenting" class="w-full bg-amber-500 text-white font-extrabold py-4 px-10 rounded-lg text-xl hover:bg-amber-600 transition-all duration-300 transform hover:scale-105 block shadow-lg">AMANKAN HARGA SPESIAL SEKARANG</a>
+                    
+                    <div class="mt-8 bg-yellow-100 text-yellow-800 p-3 rounded-lg">
+                        <p class="font-bold">Penawaran Berakhir Dalam:</p>
+                        <div id="countdown-timer" class="text-2xl font-mono font-bold mt-1"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6 scroll-animate">
+                <h2 class="text-3xl font-bold text-center mb-12">✨ Kata Mereka yang Sudah Merasakan Manfaatnya</h2>
+                <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-amber-50 p-8 rounded-lg shadow-sm relative">
+                        <div class="absolute top-0 left-0 -translate-x-4 -translate-y-4 text-7xl text-amber-100 opacity-75">“</div>
+                        <p class="mb-4 italic">"Sebelumnya pusing cari cara, sekarang punya SOP jelas. Tiap momen jadi kesempatan pemuridan. Anak-anak malah antusias!"</p>
+                        <p class="font-bold text-right">- Maria, Ibu 2 Anak</p>
+                    </div>
+                    <div class="bg-amber-50 p-8 rounded-lg shadow-sm relative">
+                        <div class="absolute top-0 left-0 -translate-x-4 -translate-y-4 text-7xl text-amber-100 opacity-75">“</div>
+                        <p class="mb-4 italic">"Anak saya tanya soal tren viral, dulu bingung jawabnya. Sekarang pakai '5 Pertanyaan Kritis', obrolan jadi dalam dan mereka mikir sendiri!"</p>
+                        <p class="font-bold text-right">- Budi, Ayah Remaja</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bonus Section -->
+        <section class="py-20 bg-amber-500 text-white">
+            <div class="container mx-auto px-6 text-center scroll-animate">
+                <h2 class="text-4xl font-extrabold mb-4">🎉 BONUS SPESIAL 🎉</h2>
+                <p class="text-xl mb-8">Untuk <span class="bg-yellow-300 text-stone-900 font-bold px-2 rounded">50 Pembeli Pertama</span> Hari Ini!</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto items-start">
+                    <div class="bg-white/20 p-6 rounded-lg text-center">
+                        <img src="./img/ChatGPT Image 14 Jul 2025, 14.00.52.webp" alt="Mockup Buku Cerita Alkitab Interaktif" class="rounded-lg shadow-lg w-full max-w-xs mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">Bonus #1: E-book</h3>
+                        <p>Buku Cerita Alkitab Interaktif untuk Anak.</p>
+                    </div>
+                    <div class="bg-white/20 p-6 rounded-lg text-center">
+                        <img src="./img/Hijau dan Kuning Ilustrasi Ceria Buku Mewarnai Document A4.webp" alt="Mockup Buku Mewarnai Kristen" class="rounded-lg shadow-lg w-full max-w-xs mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">Bonus #2: E-book</h3>
+                        <p>Buku Mewarnai Kristen yang Mendidik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Guarantee Section -->
+        <section class="py-20 bg-stone-100">
+            <div class="container mx-auto px-6 text-center scroll-animate">
+                <div class="max-w-2xl mx-auto">
+                    <img src="https://placehold.co/100x100/eab308/ffffff?text=100%25" alt="Garansi" class="mx-auto mb-6 rounded-full">
+                    <h2 class="text-3xl font-bold mb-4">100% Garansi Uang Kembali</h2>
+                    <p class="text-lg">Coba SOP ini selama 7 hari. Jika Anda tidak merasakan manfaatnya atau tidak mendapatkan kepercayaan diri yang baru, katakan saja. Uang Anda kembali 100%, tanpa ribet. <span class="font-bold">Tanpa risiko, hanya manfaat.</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="py-20 bg-stone-800 text-white">
+            <div class="container mx-auto px-6 text-center scroll-animate">
+                <h2 class="text-4xl font-bold mb-4">Jangan Tunda Lagi!</h2>
+                <p class="text-xl max-w-3xl mx-auto mb-8">Pilihan ada di tangan Anda: Terus cemas & bingung, atau miliki SOP yang JELAS untuk membangun benteng iman keluarga yang kokoh.</p>
+                <a href="https://moodfaith.myr.id/pl/christianity-parenting" class="bg-yellow-400 text-stone-900 font-extrabold py-4 px-10 rounded-lg text-lg hover:bg-yellow-500 transition-all duration-300 transform hover:scale-105 shadow-lg">Ya, Saya Mau E-book & Bonusnya!</a>
+                <p class="mt-4 text-sm text-slate-400">Kesempatan langka ini + bonus eksklusif hanya untuk 50 orang pertama HARI INI!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-stone-900 text-slate-400 py-8 text-center">
+        <div class="container mx-auto px-6">
+            <p>&copy; <span id="current-year"></span> Moodfaith. All Rights Reserved.</p>
+            <p class="text-sm mt-2">Platform Pertumbuhan Iman Keluarga.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for animations and countdown timer
+
+        // 1. Animate sections on scroll
+        const scrollAnimateElements = document.querySelectorAll('.scroll-animate');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    observer.unobserve(entry.target); // Optional: stop observing after animation
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        scrollAnimateElements.forEach(el => {
+            observer.observe(el);
+        });
+
+        // 2. Countdown Timer for the special offer
+        const countdownElement = document.getElementById('countdown-timer');
+
+        function startCountdown() {
+            const now = new Date();
+            const endOfDay = new Date(now);
+            endOfDay.setHours(23, 59, 59, 999); // Set target to the end of the current day
+
+            const interval = setInterval(() => {
+                const currentTime = new Date().getTime();
+                const distance = endOfDay - currentTime;
+
+                if (distance < 0) {
+                    clearInterval(interval);
+                    countdownElement.innerHTML = "Penawaran Telah Berakhir";
+                    return;
+                }
+
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Add leading zeros
+                const displayHours = String(hours).padStart(2, '0');
+                const displayMinutes = String(minutes).padStart(2, '0');
+                const displaySeconds = String(seconds).padStart(2, '0');
+
+                countdownElement.innerHTML = `${displayHours} : ${displayMinutes} : ${displaySeconds}`;
+            }, 1000);
+        }
+
+        if (countdownElement) {
+            startCountdown();
+        }
+
+        // 3. Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 4. Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    </script>
+
+</body>
+</html>
